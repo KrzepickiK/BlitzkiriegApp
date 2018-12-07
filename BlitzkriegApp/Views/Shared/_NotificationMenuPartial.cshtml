@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    
+<div class="col-1 p-0 m-0" style="max-width:80px;">
+    <div class="material-button-anim">
+        <ul class="list-inline" id="options">
+            <li class="option">
+                <button class="material-button option1" type="button">
+                    <span class="fa fa-phone" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="option">
+                <button class="material-button option2" type="button">
+                    <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="option">
+                <button class="material-button option3" type="button">
+                    <span class="fa fa-pencil" aria-hidden="true"></span>
+                </button>
+            </li>
+        </ul>
+        <button class="material-button material-button-toggle" type="button">
+            <span class="fa fa-plus" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+}
